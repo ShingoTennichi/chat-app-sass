@@ -1,0 +1,7 @@
+@use "../utils/variables" as var;
+
+.footer {
+  display: block;
+  min-height: 300px;
+  border: solid var.$white;
+}

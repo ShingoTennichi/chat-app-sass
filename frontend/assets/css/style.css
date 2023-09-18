@@ -158,6 +158,12 @@ h3 {
   background-color: hsl(220, 14%, 96%);
 }
 
+.footer {
+  display: block;
+  min-height: 300px;
+  border: solid hsl(220, 14%, 96%);
+}
+
 .btn {
   background-color: hsl(158, 64%, 52%);
   padding: 0.75rem 1.25rem;
