@@ -1,0 +1,9 @@
+@use "../utils/variables" as var;
+@use "../utils/function" as f;
+
+.btn {
+  background-color: var.$green;
+  padding: f.pxToRem(12) f.pxToRem(20);
+  border: solid var.$gray f.pxToRem(4);
+  border-radius: 50px;
+}

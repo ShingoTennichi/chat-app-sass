@@ -1,0 +1,18 @@
+.chat {
+  border: solid white 10px;
+  list-style: none;
+  &__message {
+    display: block;
+    padding: 24px 0;
+    margin: 24px 0;
+    color: black;
+
+    &--me {
+      background-color: white;
+    }
+
+    &--other {
+      background-color: red;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat room</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script defer src="../js/websocket.js"></script>
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+  </head>
+  <body>
+    <h1>Chat here</h1>
+    <input type="text" placeholder="input" />
+    <button>Send</button>
+    <ul id="chat"  class="chat">
+      <li class="chat__message">
+        <span class="chat__message--me">message</span>
+      </li>
+      <li class="chat__message">
+        <span class="chat__message--other">message</span>
+      </li>
+    </ul>
+  </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+
+    <input placeholder="message" />
+    <button>Send</button>
+
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script defer src="../js/websocket.js"></script>
+  </body>
+</html> -->

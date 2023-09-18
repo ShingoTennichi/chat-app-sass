@@ -1,0 +1,20 @@
+.svg {
+  position: absolute;
+  &__cell-phone {
+    width: 300px;
+    left: 15%;
+    bottom: 10%;
+    transform: rotateZ(20deg);
+    z-index: -1;
+    filter: brightness(0.3);
+  }
+
+  &__mobile-bro {
+    width: 300px;
+    right: 20%;
+    top: 15%;
+    transform: rotate(0deg, 180deg, -45deg);
+    z-index: -1;
+    filter: brightness(0.3);
+  }
+}

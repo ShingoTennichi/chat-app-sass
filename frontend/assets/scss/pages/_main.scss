@@ -1,0 +1,92 @@
+@use "../utils/function" as f;
+@use "../utils/variables" as var;
+
+.main {
+  display: block;
+  position: relative;
+
+  video {
+    height: 100%;
+    max-height: 600px;
+    position: absolute;
+    width: 100%;
+    object-fit: none;
+    z-index: -1;
+  }
+
+  .content {
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-rows: auto auto auto;
+    gap: f.pxToRem(48);
+    margin: f.pxToRem(60) 0 0;
+    text-align: center;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: f.pxToRem(32);
+  height: f.pxToRem(600);
+  position: relative;
+
+  &__title {
+    margin: f.pxToRem(24) 0;
+
+    &--size {
+      font-size: 2rem;
+    }
+  }
+
+  &__message {
+    width: 60%;
+    
+  }
+}
+
+.pricing {
+  display: block;
+  margin: f.pxToRem(24);
+
+  &__title {
+    margin: f.pxToRem(24) 0;
+
+    &--size {
+      font-size: 2rem;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: f.pxToRem(48);
+
+    &--card {
+      width: f.pxToRem(250);
+      height: f.pxToRem(300);
+      padding: f.pxToRem(24) f.pxToRem(40);
+      background: hsl(243, 100%, 7%);
+      background: linear-gradient(
+        191deg,
+        hsl(243, 100%, 7%) 0%,
+        hsl(190, 100%, 50%) 50%,
+        hsl(240, 86%, 25%) 100%
+      );
+      box-shadow: 5px 5px 0px hsl(217, 25%, 18%),
+        -5px -5px 0px hsl(215, 25%, 36%);
+      border-radius: 16px;
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
