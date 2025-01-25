@@ -1,6 +1,7 @@
 
 const http = require('http');
 const server = http.createServer()
+const port = 3001;
 
 const io = require('socket.io')(server, {
   cors: { origin: "*" }
@@ -13,11 +14,19 @@ io.on('connection', (socket) => {
   console.log(socket.handshake.auth);
   socket.on(key, (message) => {
     console.log(message);
-    
     io.emit(key, [`${socket.id} said ${message}`, "me"]);
   });
 });
 
-server.listen(3001, () => {
-  console.log('listening on http://localhost:8080');
+server.listen(port, () => {
+  console.log(`listening on http://localhost:${port}`);
 });
+
+class message {
+  constructor(authorId, authorName, message) {
+    this.authorId = authorId;
+    this.authorName = authorName;
+    this.message = message;
+  }
+
+}
