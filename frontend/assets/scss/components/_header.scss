@@ -28,6 +28,10 @@
           color: var.$black;
           background-color: var.$white;
         }
+
+        &--invisible {
+          display: none;
+        }
       }
     }
   }

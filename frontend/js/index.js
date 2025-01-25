@@ -1,12 +1,14 @@
 const getStarted = document.getElementById("get-started");
 
 getStarted.addEventListener("click", (e) => {
-  window.location.href = "./sign-in"
+  window.location.href = "./sign-up"
 })
 
-// todo: sign in/up
+if(localStorage.getItem('id')) {
+  console.log(localStorage.getItem('id'));
+  window.location = "http://127.0.0.1:5500/frontend/dashboard"
+}
 
-// todo: websocket
 
 // todo: animation(intersectionObserver)
 

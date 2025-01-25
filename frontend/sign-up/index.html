@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <a href="#">Chat App</a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__items">
+          <li class="nav__items--item">Home</li>
+          <li class="nav__items--item">About</li>
+          <li class="nav__items--item">Pricing</li>
+          <li class="nav__items--item">Sign In</li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="sign-up">
+      <h1 class="sign-up__title">Sign Up</h1>
+      <form class="sign-up__form">
+        <div class="sign-up__form__input--name">
+          <div class="sign-up__form__input">
+            <input type="text" name="f-name" id="f-name" placeholder="First Name" />
+          </div>
+          <div class="sign-up__form__input">
+            <input type="text" name="l-name" id="l-name" placeholder="Last Name" />
+          </div>
+        </div>
+        <div class="sign-up__form__input">
+          <input type="email" name="email" id="email" placeholder="Email" />
+        </div>
+        <div class="sign-up__form__input">
+          <input type="password" name="password" id="password" placeholder="Password" />
+        </div>
+        <div class="sign-up__form__input">
+          <input type="password" name="c-password" id="c-password" placeholder="Confirm Password" />
+        </div>
+        <button type="button" id="btn--sign-up" class="sign-up__form__input--submit">Sign In</button>
+      </form>
+    </div>
+
+    <script defer src="../js/components/sign-up/index.js"></script>
+  </body>
+</html>

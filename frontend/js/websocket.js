@@ -7,6 +7,7 @@ const socket = io("ws://localhost:3001", {
 const key = "message";
 
 socket.on(key, text => {
+
   console.log(text);
   const message = document.createElement('li');
   message.classList.add("chat__message", "chat__message--me");
@@ -16,7 +17,8 @@ socket.on(key, text => {
 });
 
 document.querySelector('button').onclick = () => {
-  const text = document.querySelector('input').value;
 
+  const text = document.querySelector('input').value;
   socket.emit(key, text);
+
 }

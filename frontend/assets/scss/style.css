@@ -18,16 +18,6 @@ a:visited {
   color: inherit;
 }
 
-input {
-  background-color: inherit;
-  border: none;
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-}
-
 p,
 h1,
 h2,
@@ -61,7 +51,8 @@ h3 {
   max-height: 600px;
   position: absolute;
   width: 100%;
-  object-fit: none;
+  -o-object-fit: none;
+     object-fit: none;
   z-index: -1;
 }
 .main .content {
@@ -142,72 +133,16 @@ h3 {
   background-color: red;
 }
 
-.sign-up {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.sign-up__title {
-  font-size: 3rem;
-  margin: 1.5rem 0;
-}
-.sign-up__form {
-  display: flex;
-  flex-direction: column;
-  padding: 24px 48px;
-  color: hsl(222, 47%, 11%);
-  background-color: hsl(220, 14%, 96%);
-  border-radius: 16px;
-  gap: 40px;
-}
-.sign-up__form__input {
-  padding: 0 0 8px;
-  border-bottom: solid hsl(215, 25%, 27%) 1px;
-}
-.sign-up__form__input--name {
-  display: flex;
-  gap: 40px;
-}
-
 .sign-in {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .sign-in__title {
   font-size: 3rem;
-  margin: 1.5rem 0;
 }
 .sign-in__form {
-  min-width: 300px;
   display: flex;
-  flex-direction: column;
-  padding: 24px 48px;
-  color: hsl(222, 47%, 11%);
-  background-color: hsl(220, 14%, 96%);
-  border-radius: 16px;
-  gap: 40px;
-}
-.sign-in__form__input {
-  padding: 0 0 8px;
-  border-bottom: solid hsl(215, 25%, 27%) 1px;
-}
-.sign-in__form__input--name {
-  display: flex;
-  gap: 40px;
-}
-.sign-in__form__input--submit {
-  background-color: inherit;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 16px;
-  transition: 0.3s;
-}
-.sign-in__form__input--submit:hover {
-  color: hsl(220, 14%, 96%);
-  background-color: hsl(215, 25%, 27%);
 }
 
 .header {
@@ -235,9 +170,6 @@ h3 {
   color: hsl(222, 47%, 11%);
   background-color: hsl(220, 14%, 96%);
 }
-.header .nav__items--item--invisible {
-  display: none;
-}
 
 .footer {
   display: block;
@@ -251,16 +183,7 @@ h3 {
   border: solid hsl(215, 25%, 27%) 0.25rem;
   border-radius: 50px;
 }
-.btn__nav {
-  background-color: inherit;
-  padding: inherit;
-  border: inherit;
-  border-radius: inherit;
-}
-.btn__nav:hover {
-  color: hsl(222, 47%, 11%);
-  background-color: hsl(220, 14%, 96%);
-}
+
 .svg {
   position: absolute;
 }
@@ -279,6 +202,4 @@ h3 {
   transform: rotate(0deg, 180deg, -45deg);
   z-index: -1;
   filter: brightness(0.3);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

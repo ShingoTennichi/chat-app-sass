@@ -1,0 +1,48 @@
+@use "../utils/variables" as var;
+@use "../utils/function" as f;
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 3rem;
+    margin: f.pxToRem(24) 0;
+  }
+
+  &__form {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 48px;
+    color: var.$black;
+    background-color: var.$white;
+    border-radius: 16px;
+    gap: 40px;
+
+    &__input {
+      padding: 0 0 8px;
+      border-bottom: solid var.$gray 1px;
+    }
+
+    &__input--name {
+      display: flex;
+      gap: 40px;
+    }
+
+    &__input--submit {
+      background-color: inherit;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 16px;
+      transition: 0.3s;
+
+      &:hover {
+        color: var.$white;
+        background-color: var.$gray;
+      }
+    }
+  }
+}

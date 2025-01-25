@@ -6,4 +6,19 @@
   padding: f.pxToRem(12) f.pxToRem(20);
   border: solid var.$gray f.pxToRem(4);
   border-radius: 50px;
+
+  &__nav {
+    background-color: inherit;
+    padding: inherit;
+    border: inherit;
+    border-radius: inherit;
+
+    &:hover {
+      color: var.$black;
+      background-color: var.$white;
+    }
+
+    &--sign-out {
+    }
+  }
 }
